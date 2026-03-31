@@ -57,3 +57,8 @@ python src/AgenticAIwithGoogleMapMCP.py
 - **Environment Loading**: `load_dotenv()` initializes the environment variables and loads `MAPS_API_KEY` from the `.env` file.
 - **MCP Toolset Initialization (`maps_toolset`)**: Uses `McpToolset` and `StreamableHTTPConnectionParams` to establish a connection to the Google-hosted Maps MCP endpoint (`https://mapstools.googleapis.com/mcp`). It securely passes the API key via the `X-Goog-Api-Key` HTTP header.
 - **Agent Creation (`root_agent`)**: Initializes an `LlmAgent` named `maps_mcp_agent` using the `gemini-2.5-flash` model. The agent is explicitly instructed to act as a helpful assistant that leverages the attached maps tools to answer questions and provide directions with proper travel modes and Google Maps links.
+
+its gives list of tools availabe in this service and list of param need to call this service. LLM build this request as per defined Json RPC. 
+![img.png](img.png)
+
+![img_1.png](img_1.png)
